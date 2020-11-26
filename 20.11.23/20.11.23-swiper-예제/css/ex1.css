@@ -1,0 +1,111 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+a{text-decoration: none;}
+ol,ul,li{list-style: none;}
+
+/*------visual------------------------------------------------*/
+#visual{width:100%; height:100vh; margin: 0 auto;}
+#visual .swiper-container{width:100%; height:100%;}
+
+#visual .swiper-slide{
+    position: relative; width:100%; height:100%;
+    background-repeat: no-repeat; background-size: cover; background-position: center;
+}
+
+#visual .swiper-slide.bg1{background-image: url(../img/bg-1.jpg);}
+#visual .swiper-slide.bg2{background-image: url(../img/bg-2.jpg);}
+#visual .swiper-slide.bg3{background-image: url(../img/bg-3.jpg);}
+
+#visual .swiper-slide .msg{
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+    text-align: center; overflow: hidden;
+}
+#visual .swiper-slide .msg .txt1{
+    font: bold 72px/2 '맑은 고딕'; color: #fff; text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: translateX(-50px); opacity: 0; transition: 1s 0.2s;
+}
+#visual .swiper-slide .msg .txt2{
+    font: 16px '맑은 고딕'; color: #fff;text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: translateX(50px); opacity: 0; transition: 1s 0.6s;
+}
+
+#visual .swiper-slide-active .msg .txt1{opacity: 1; transform: translateX(0px);}
+#visual .swiper-slide-active .msg .txt2{opacity: 1; transform: translateX(0px);}
+
+@media screen and (max-width:1024px){
+    #visual{height:700px;}
+    #visual .swiper-slide .msg .txt1{font: bold 48px/1 '맑은 고딕'; margin-bottom: 20px;}
+}
+
+@media screen and (max-width:768px){
+
+}
+@media screen and (max-width:640px){
+    #visual{height:600px;}
+}
+@media screen and (max-width:480px){
+    #visual{height:500px;}
+}
+
+
+/*------best item------------------------------------------------*/
+#best_item{width:100%; margin: 0 auto; padding: 100px 0px}
+#best_item .inner{position: relative; width: 1300px; margin: 0 auto; padding-bottom: 40px; }
+
+#best_item .swiper-container{width: 1180px; height: 100%;}
+
+/* 이미지 삽입*/
+#best_item .swiper-slide{width: 100%; height: 100%;}
+
+#best_item .swiper-slide .pic{width: 100%; height: 100%;}
+#best_item .swiper-slide .pic img{width: 100%;}
+#best_item .swiper-slide .msg{}
+#best_item .swiper-slide .msg .txt1{font: bold 16px '맑은 고딕';}
+#best_item .swiper-slide .msg .txt2{font: 16px '맑은 고딕';}
+
+#best_item .swiper-button-prev,
+#best_item .swiper-button-next{transform: translateY(-40%);}
+#best_item .swiper-pagination{position: absolute; left: 50%;bottom: 0; transform: translateX(-50%);}
+#best_item .swiper-pagination-bullet{margin: 0 7px;}
+
+@media screen and (max-width:1024px){
+    #best_item .inner{width:100%;}
+    #best_item .swiper-container{width:90%;}
+
+}
+
+/*------new item------------------------------------------------*/
+#new_item{width:100%; margin: 0 auto; padding: 100px 0px}
+#new_item .inner{position: relative; width: 1300px; margin: 0 auto; padding-bottom: 40px; }
+
+#new_item .swiper-container{width: 1180px; height: 100%;}
+
+/* 이미지 삽입*/
+#new_item .swiper-slide{width: 100%; height: 100%;  transform: scale(0.7);}
+
+#new_item .swiper-slide .pic{width: 100%; height: 100%;}
+#new_item .swiper-slide .pic img{width: 100%;}
+#new_item .swiper-slide .msg{}
+#new_item .swiper-slide .msg .txt1{font: bold 16px '맑은 고딕'; opacity: 0; transition: 0.5s}
+#new_item .swiper-slide .msg .txt2{font: 16px '맑은 고딕'; opacity: 0; transition: 0.5s}
+
+#new_item .swiper-slide-active{z-index: 5;  opacity: 1;  transform: scale(1); background-color: beige;}
+#new_item .swiper-slide-active .msg .txt1{opacity: 1;}
+#new_item .swiper-slide-active .msg .txt2{opacity: 1;}
+
+
+#new_item .swiper-button-prev,
+#new_item .swiper-button-next{transform: translateY(-40%);}
+#new_item .swiper-pagination{position: absolute; left: 50%;bottom: 0; transform: translateX(-50%);}
+#new_item .swiper-pagination-bullet{margin: 0 7px;}
+
+
+@media screen and (max-width:1024px){
+    #best_item .inner{width:100%;}
+    #best_item .swiper-container{width:90%;}
+
+}
+
+
+
+
+

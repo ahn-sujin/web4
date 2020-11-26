@@ -1,0 +1,57 @@
+*{margin: 0; padding: 0; box-sizing: border-box}
+ul, ol, li{list-style: none}
+a{text-decoration: none;}
+
+
+#header{width: 100%; height: 100px; background: pink; position: relative;}
+
+#header .inner{ width: 1180px; margin: 0 auto;}
+#header .inner::after{content: ''; clear: both; display: block}
+
+#header .logo{float: left; padding-top: 30px;}
+#header .logo>a{display: block; font: bold 40px/40px '맑은 고딕'}
+
+#header .nav_wrap{float: right; border: 1px solid black;}
+
+#header .global_menu{text-align: right;}
+#header .global_menu>li{display: inline-block; padding-left: 50px;}
+#header .global_menu>li>a{display: block; font: 14px/40px '맑은 고딕';}
+
+#header .gnb_wrap{float: left; border: 1px solid red;}
+
+#header .sns{float: right; width: 120px; text-align: center; border: 1px solid blue;}
+#header .sns>li{display: inline-block; margin: 0 5px; font: 16px/60px '맑은 고딕'}
+
+
+/* stpe-2 gnb 형태 잡기*/
+
+#header .inner .nav_wrap .gnb_wrap #gnb li .sub_wrap
+
+#gnb{}
+#gnb>li{float: left; padding: 0 30px;}
+#gnb>li>a{display: block; font: bold 18px/60px '맑은 고딕';}
+
+
+/* stpe-3 .sub_wrap과 .sub_inner 형태 잡기*/
+#gnb>li>.sub_wrap{position: absolute; left: 0; top: 100px; width: 100%; background: #333}
+#gnb>li>.sub_wrap>.sub_inner{width: 1180px; height: 300px; margin: 0 auto; background: yellow;}
+#gnb>li>.sub_wrap>.sub_inner::after{content: ''; clear: both; display: block;}
+                              /* .sub_inner의 높이는 나중에 지워준다.*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,44 @@
+*{margin: 0; padding: 0; box-sizing: border-box}
+ul, ol, li{list-style: none}
+a{text-decoration: none}
+
+#header{width: 100%; height: 100px; background: yellow}
+#header .inner{width: 1180px; margin: 0 auto;}
+#header .inner::after{content: ''; display: block; clear: both}
+
+#header .logo{float: left; padding-top: 30px;}
+#header .logo > a{display: block; font: bold 40px/40px '맑은 고딕';}
+#header .gnb_wrap{float: right;}
+
+#gnb{padding-top: 50px; text-align: center;}
+#gnb>li{float: left; border: 1px solid black;}
+#gnb>li>a{display: block; padding: 0 30px; font: bold 18px/50px '맑은 고딕';}
+#gnb>li>.sub{display: none;}
+#gnb>li>.sub>li>a{display: block; font: 16px/40px '맑은 고딕';}
+
+#header .toggle{display: none}
+
+@media screen and (max-width:768px){
+    #header{height: 70px; background: pink}
+    #header .inner{width: 100%; padding: 0 40px;}
+    
+    #header .logo{padding-top: 20px;}
+    #header .logo > a{font: bold 30px/30px '맑은 고딕';}
+    
+    #header .gnb_wrap{position: fixed; right: 0; top: 0; 
+        width: 300px; height: 100%; background: rgba(0, 0, 0, 0.8);}
+    #gnb{padding-top: 70px;}
+    #gnb>li{width: 100%;}
+    #gnb>li>a{line-height: 60px; color: white;}
+    #gnb>li>.sub>li>a{color: white;}
+
+    
+    #header .toggle{display: block; position: fixed; right: 40px; top: 15px; z-index: 10; font-size: 28px; color: white;}
+}
+
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+*{margin: 0; padding: 0; box-sizing: border-box}
+ul, ol, li{list-style: none}
+a{text-decoration: none}
+
+.signup{width: 600px; margin: 100px auto; border-spacing: 0; border-collapse: collapse; }
+
+.signup th,
+.signup td{border: 1px dotted #ddd; padding: 10px 20px; border-left: 0; border-right: 0;}
+.signup th{text-align: right;}
+
+.required::before{content: "* "; color: red;}
+
+input[type="text"],
+input[type="password"],
+input[type="email"]{width: 200px; height: 25px; border: 1px solid #ddd;}
+input[type="text"].half{width: 70px}
+
+select{width: 70px; height: 25px; text-align: center; border: 1px solid #ddd;}
+
+.list{display: inline-block;}
+.list>li{display: inline-block; margin-right: 20px;}

@@ -1,0 +1,50 @@
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+#visual{width:100%; height: 100vh; margin: 0 auto; border: 10px solid black;}
+
+#visual .swiper-container{width: 100%; height: 100%;}
+
+/* 이미지 삽입*/
+#visual .swiper-slide{
+    position: relative; width: 100%; height: 100%; 
+    background-repeat: no-repeat; background-position: center; background-size: cover;
+}
+#visual .swiper-slide.bg1{background-image: url('../img/bg-1.jpg')}
+#visual .swiper-slide.bg2{background-image: url('../img/bg-2.jpg')}
+#visual .swiper-slide.bg3{background-image: url('../img/bg-3.jpg'); background-position: center -50px;}
+/* 무한루프 적용할 경우 nth-of-type 사용할 수 없다 
+    - 왜? 슬라이드 위치를 무한으로 돌리기 위해 계속 바꾸기 때문에
+*/
+
+
+#visual .swiper-slide .msg{
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+    text-align: center; overflow: hidden;
+}
+#visual .swiper-slide .msg .txt1{
+    font: bold 72px/2 '맑은 고딕'; color: #fff; text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: translateX(-50px); opacity: 0; transition: 1s 0.2s;
+}
+#visual .swiper-slide .msg .txt2{
+    font: 16px '맑은 고딕'; color: #fff;text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: translateX(50px); opacity: 0; transition: 1s 0.6s;
+}
+
+
+#visual .swiper-slide-active .msg .txt1{opacity: 1; transform: translateX(0px);}
+#visual .swiper-slide-active .msg .txt2{opacity: 1; transform: translateX(0px);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

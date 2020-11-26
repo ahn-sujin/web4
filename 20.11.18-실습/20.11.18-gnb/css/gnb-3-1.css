@@ -1,0 +1,45 @@
+*{margin: 0; padding: 0; box-sizing: border-box}
+ul, ol, li{list-style: none}
+a{text-decoration: none}
+
+#header{position: fixed; width: 300px; height: 100%; background: #652b5a; text-align: center;}
+#header a{color: white;}
+
+#header .logo{padding-top: 30px; margin-bottom: 40px;}
+#header .logo > a{display: block; font: bold 32px/40px '맑은 고딕';}
+
+#header .global_menu{line-height: 60px; }
+#header .global_menu >li{display: inline-block; width: 80px; margin: 0px 5px; border-right: 1px dotted rgba(255, 255, 255, 0.4);}
+#header .global_menu >li:last-of-type{border-right: 0;}
+
+#header .global_menu >li>a>i{font-size: 24px;}
+#header .global_menu >li>a>p{font: 14px/10px '맑은 고딕';}
+    
+#header .toggle{
+    display: block; position: fixed; right: 40px; top: 15px; z-index: 10; 
+    font-size: 28px; color: white;
+}
+
+
+#header .category_wrap{padding: 30px;}
+
+.list {position: relative; text-transform: capitalize;}
+.list >li {float: left; width: 50%; }
+.list >li>a{display: block; width: 100%; font: 16px/50px '맑은 고딕'}
+.list >li>.gnb {display: none; position: absolute; left: 0; top: 50px; width: 100%; padding:15px 0; background: rgba(0,0,0,.2); border-radius: 10px; text-align: left;}
+
+.gnb > li {padding: 10px 0 0 20px}
+.gnb > li >a{display: block; font: bold 18px/30px '맑은 고딕'; }
+.gnb > li >a::before{content: '+'; margin-right: 10px; font-weight: 900;}
+
+.gnb > li > .sub { display: none;}
+.gnb > li > .sub > li{margin-left: 20px}
+.gnb > li > .sub > li>a{display: block; font: 16px/24px '맑은 고딕'}
+.gnb > li > .sub > li>a::before{content: '-'; margin-right: 10px; font-weight: 900;}
+
+
+
+
+
+
+

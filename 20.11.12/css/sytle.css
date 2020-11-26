@@ -1,0 +1,28 @@
+*{box-sizing: border-box; margin: 0; padding: 0;}
+a{text-decoration: none;}
+ol,ul,li{list-style: none;}
+
+.content{width:100%;}
+.content .inner{width:1180px; margin: 0 auto;}
+.content .inner::after{content:''; clear: both; display: block;}
+
+#form .gallery_list >li{ float:left; width:276px;  height: 276px; margin-right: 25px;}
+#form .gallery_list >li:last-of-type{margin-right: 0;}
+
+#form .gallery_list >li > input{display: none;}
+
+#form .gallery_list >li >label{cursor: pointer;}
+#form .gallery_list >li >label > img{width:100%; height: 100%;}
+
+#form .gallery_list >li >input:checked + label +.detail{
+    display: block;
+}
+#form .gallery_list >li >input + label +.detail{
+    display: none;
+    position: fixed; top:0; left:0; width:100%; height:100%;
+    background: rgba(0,0,0,0.7);
+}
+#form .gallery_list >li >input + label +.detail img{
+    width:500px; height:500px; position: absolute; top:50%; left:50%;
+    transform: translate(-50%,-50%);
+}

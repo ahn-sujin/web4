@@ -1,0 +1,45 @@
+*{margin: 0; padding: 0; box-sizing: border-box}
+ul, ol, li{list-style: none}
+a{text-decoration: none;}
+
+/* stpe-1 기본구조 잡기*/
+
+#header{width: 100%; height: 100px; background: pink; position: relative;}
+
+#header .inner{ width: 1180px; margin: 0 auto;}
+#header .inner::after{content: ''; clear: both; display: block}
+
+#header .logo{float: left; padding-top: 30px;}
+#header .logo>a{display: block; font: bold 40px/40px '맑은 고딕'}
+
+#header .nav_wrap{float: right; border: 1px solid black;}
+
+#header .global_menu{text-align: right;}
+#header .global_menu>li{display: inline-block; padding-left: 50px;}
+#header .global_menu>li>a{display: block; font: 14px/40px '맑은 고딕';}
+
+#header .gnb_wrap{float: left; border: 1px solid red;}
+
+
+#header .sns{float: right; width: 120px; text-align: center; border: 1px solid blue;}
+#header .sns>li{display: inline-block; margin: 0 5px; font: 16px/60px '맑은 고딕'}
+
+
+/* stpe-2 gnb 형태 잡기*/
+#gnb{}
+#gnb>li{float: left; padding: 0 30px;}
+#gnb>li>a{display: block; font: bold 18px/60px '맑은 고딕';}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

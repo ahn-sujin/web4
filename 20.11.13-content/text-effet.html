@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        h2{position: relative; display: inline-block; font: bold 18px '맑은 고딕'; color: #444}
+        .title1::after{
+            content: ''; display: block; position: absolute; left: 0; bottom: 0px; z-index: -1;
+            width: 0%; height: 9px; background-color: pink;
+            transition: 0.3s;
+        }
+        .title1:hover::after{width: 100%;}
+        
+        
+        .title2::after{
+            content: ''; display: block; position: absolute; left: 0; top: 0px; z-index: -1;
+            width: 0%; height: 24px; background-color: pink;
+            transition: 0.3s;
+        }
+        .title2:hover::after{width: 100%;}
+        
+        .title3::after{
+            content: ''; display: block; position: absolute; left: 0; bottom: 0px; z-index: -1;
+            width: 100%; height: 3px; background-color: pink;
+            transition: 0.3s;
+        }
+        .title3:hover::after{height: 24px;}
+        
+        
+        .box{position: relative; width: 400px; height: 300px; border: 1px solid #444;}
+        .box .price{
+            position: absolute; right: 0; top: 0; z-index: 1; width: 80px; height: 60px;
+            text-align: center; color: #444; line-height: 60px; overflow: hidden;
+        }
+        .box .price::before{
+            content: ''; display: block; 
+            position: absolute; left: -8px; top: 0; z-index: -1;
+            width: 150%; height: 100%;
+            background-color: aquamarine; transform: skewX(45deg);
+        }
+    </style>
+</head>
+<body>
+    <h2 class="title1">Title1</h2><br>
+    <h2 class="title2">Title2</h2><br>
+    <h2 class="title3">Title3</h2>
+    
+    
+    <div class="box">
+        <div class="price">\1천원</div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     </head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        .form_area{width:500px; margin: 0 auto;}
+        ol,ul,li{list-style: none;}
+    </style>
+
+<body>
+
+    <h1>폼 테그</h1>
+    <hr/>
+    <div class="form_area">
+        
+        <form action="#" method="post">
+            <fieldset>
+                <legend>입력</legend>
+                
+                <h2>이전부터 존재하는 기능</h2>
+                
+                <label for="inputText">제목</label>
+                <input type="text" id="inputText" name="inputText" value="" placeholder="내용" required="required">
+                
+                <br>
+                
+                <label for="pwText">비밀번호</label>
+                <input type="password" id="pwText" name="pwText" value="">
+                <input type="hidden" id="hiddenText" name="hiddenText" value="">
+                <br>
+                
+                <hr>
+                
+                <h2>html5 이후 존재하는 기능</h2>
+                <label for="searchArea" >검색</label>
+                <input type="search" id="searchArea" name="searchArea" value="" placeholder="내용을 입력하세요"  required="required">
+                
+                <br>
+                
+                <labe for="mailArea">이메일 주소</labe>
+                <input type="email" id="mailArea" name="mailArea" value=""required="required">
+                
+                <br>
+                
+                <labe for="urlArea">웹페이지 주소</labe>
+                <input type="url" id="urlArea" name="urlArea" value=""  required="required">
+                
+                <br>
+                
+                <labe for="telArea">생년월일</labe>
+                <input type="tel" id="telArea" name="telArea" value=""  required="required">
+                
+                
+            </fieldset>
+            
+            <fieldset>
+                
+                <legend>체크1</legend>
+                <p>다음 중 좋아하는 음식을 고르시오.</p>
+                
+                <ul>
+                    <li>
+                        <input type="checkbox"  id="sel_01" value="치킨" name="food">
+                        <label for="food">치킨</label>
+                    </li>
+                    <li>
+                        <input type="checkbox"  id="sel_02" value="피자" name="food">
+                        <label for="food">피자</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="sel_03" value="족발" name="food">
+                        <label for="food">족발</label>
+                    </li>
+                    <li>
+                        <input type="checkbox"  id="sel_04" value="보쌈" name="food">
+                        <label for="food">보쌈</label>
+                    </li>
+                </ul>
+                
+            </fieldset>
+            
+            <fieldset>
+                
+                <legend>체크2</legend>
+                <p>다음 중 가장 좋아하는 여행지를 고르시오.</p>
+                
+                <ul>
+                    <li>
+                        <input type="radio" id="sel_05" value="서울" name="trip">
+                        <label for="trip">서울</label>
+                    </li>
+                    
+                    <li>
+                        <input type="radio" id="sel_05" value="서울" name="trip">
+                        <label for="trip">부산</label>
+                    </li>
+                    
+                    <li>
+                        <input type="radio" id="sel_05" value="서울" name="trip">
+                        <label for="trip">강원도</label>
+                    </li>
+                    
+                    <li>
+                        <input type="radio" id="sel_05" value="서울" name="trip">
+                        <label for="trip">경주</label>
+                    </li>
+                    
+                    <li>
+                        <input type="radio" id="sel_05" value="서울" name="trip">
+                        <label for="trip">제주도</label>
+                    </li>
+                </ul>
+                
+            </fieldset>
+            
+            <fieldset>
+               
+                <legend>버튼</legend>
+                <input type="submit" vlaue="동의">
+                <input type="reset" vlaue="취소">
+                <input type="image" vlaue="동의">
+                
+                <br>
+                
+                <label for="postLink">우편번호 검색</label>
+                <input type="button" id="postLink" value="우편번호">
+                
+                <br>
+                
+                <label for="dataFile">첨부자료</label>
+                <input type="file" id="datafile" value="">
+                
+            </fieldset>
+            
+            <fieldset>
+                <legend>멀티/복합</legend>
+                <p>여러줄의 내용을 입력하는 형태</p>
+                <label for="comment">내용을 입력하세요.</label>
+                <textarea name="" id="comment" cols="100" rows="10"></textarea>
+                
+                <br>
+                
+                <label for="optionSelect">상품의 추가 옵션을 선택하세요</label>
+                <select name="optionSelect" id="opstionSelect">
+                    <option>옵션선택</option>
+                    <optgroup label="렌즈 부분">
+                        <option value="lenz">카메라 렌즈</option>
+                        <option value="cover">안경 닦이</option> 
+                    </optgroup>
+                    <optgroup label="케이스 부분">
+                        <option value="lenz">안경 케이스</option>
+ 
+                    </optgroup>
+                    <optgroup label="기타 부분">
+                        <option value="lenz">주차권</option>
+
+                    </optgroup>
+                </select>
+                
+                <br>
+                
+                <button type="submit">확인</button>
+                <button type="reset">취소</button>
+                <button type=button>기능</button>
+                
+            </fieldset>
+            
+
+            
+        </form>
+        
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+*{margin: 0; padding: 0; box-sizing: border-box}
+ul, ol, li{list-style: none}
+a{text-decoration: none; color: inherit;}
+table{border-collapse: collapse;}
+
+body{font: 14px '맑은 고딕'; color: #333; background: #d6dfef;}
+
+.main{padding: 40px;}
+
+.main-box h2{line-height:20px; color: #4d5664}
+.main-box p{line-height:20px; color: #687386; }
+
+.layout-box{margin: 20px 0 0 0; padding: 30px; background: white;}
+.layout-box table tr{border-bottom: 1px dotted #dae1e6}
+.layout-box table td{padding: 10px 0px;}
+.layout-box table td.th{
+    width: 120px; padding: 0 20px 0 0; 
+    line-height: 40px; text-align: right; font-weight: bold; color: #597a96; 
+}
+.layout-box table p + p{margin-top: 5px};
+
+.layout-box ul::after{content: ''; clear: both; display: block}
+
+.layout-box .list>li{float: left; padding: 0 30px 0 0 ; line-height: 30px;}
+
+
+
+
+.layout-box .preview>li{
+    float: left; width: 200px; height: 200px; margin: 0 10px 10px 0; padding: 5px ;
+    border: 1px solid #c4d0e3; border-radius: 3px; background: #dce4eb;
+}
+
+.layout-box .preview>li .image{
+    position: relative; display: inline-block; width: 100%; height: 130px; 
+    border: 1px solid #c4d0e3; text-align: center; overflow: hidden; background: #fff;
+}
+
+.layout-box .preview>li .image img{max-height: 100%;}
+.layout-box .preview>li .image .sample-icon{
+    line-height: 130px; text-align: center; font-size: 36px; color: #dae1e6;}
+
+.layout-box .preview>li .image a{
+    position: absolute; display: inline-block;  width: 30px; height: 30px; line-height: 30px;
+    background:#dae1e6; color:#fff; border-radius: 100%; text-align: center; 
+    opacity: 0;transition: 0.3s}
+.layout-box .preview>li .image a.download{left: 50%; top: 10px; transform: translateX(-50%);}
+.layout-box .preview>li .image a.prev{left: 10px; top: 50%; transform: translateY(-50%);}
+.layout-box .preview>li .image a.next{right: 10px; top: 50%; transform: translateY(-50%);}
+
+.layout-box .preview>li:hover .image a{opacity: 1;}
+
+
+.layout-box .preview>li .measurement{
+    position: absolute; bottom: -20px; left: 0px; 
+    width: 100%; line-height: 20px; text-align: center; 
+    font-size: 13px; color: #fff; background: rgba(0, 0, 0, 0.3); transition: 0.3s    
+}
+
+.layout-box .preview>li:hover .measurement{bottom: 0;}
+
+.layout-box .preview>li .file-info{display: inline-block; width: 100%; margin: 8px 0px;}
+.layout-box .preview>li .file-info .icon{display: inline-block; margin: 0 8px; color: #647dac;}
+.layout-box .preview>li .size{
+    display: inline-block; padding: 2px 5px; 
+    border-radius: 3px; color: #fff; background: #89aacb;
+}
+.layout-box .preview>li .spin > i {animation: spin 3.2s infinite linear;}
+@keyframes spin{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+
+.layout-box .file>li{ position: relative; height: 36px;  margin: 0 10px 10px 0; padding: 5px ;
+    border: 1px solid #c4d0e3; border-radius: 3px; background: #dce4eb;
+}
+.layout-box .file>li .icon{color: #647dac }
+.layout-box .file>li .function{position: absolute; right: 10px; top: 5px; }
+.layout-box .file>li .function>a{display: inline-block;width: 20px; height: 20px; margin: 0px 3px; background: rgba(255, 255, 255, 0.8);  border-radius: 100%; text-align: center; line-height: 20px;}
+.layout-box .file>li .function>a.up{color: #647dac;}
+.layout-box .file>li .function>a.down{color: #647dac;}
+.layout-box .file>li .function>a.delete{color: red}
+.layout-box .file>li .size{display: inline-block; padding: 2px 5px; 
+    border-radius: 3px; color: #fff; background: #89aacb;}
+
+
+
+
+input[type="text"],
+input[type="password"],
+select{
+    display: inline-block; width: 200px; height: 30px; padding: 0 10px;
+    border: 1px solid #c4d0e3; border-radius: 3px; 
+    box-shadow: inset  1px 1px 3px #eee;
+}
+
+select.half{width: 80px;}
+
+input[type="checkbox"], 
+input[type="radio"]{vertical-align: middle;}
+
+input.full{width: 100%;}
+input.half{width: 50%;}
+input.number{width: 90px;}
+
+textarea{
+    display: block; width: 100%; height: 150x; 
+    border: 1px solid #c4d0e3; box-shadow: inset  1px 1px 3px #eee; border-radius: 3px;
+    vertical-align: bottom;
+}
+
+.btn{display: inline-block; background: #5c76a7; border-radius: 3px; text-align: center; color : #fff;}
+
+.btn.small{min-width: 50px; height: 30px; line-height: 30px; padding: 0 12px; font-size: 13px;}
+.btn.medium{min-width: 70px; height: 35px; line-height: 35px; padding: 0 14px; font-size: 17px;}
+
+.btn.blue{border: 1px solid #4f6898; background: #5c76a7;}
+.btn.red{border: 1px solid #9f3a3a; background: #d78686;}

@@ -1,0 +1,127 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+ul, ol, li{list-style: none}
+a{text-decoration: none;}
+
+#visual{width:100%; height: 900px; margin: 0 auto;}
+
+#visual .swiper-container{width: 100%; height: 100%;}
+
+/* 이미지 삽입*/
+#visual .swiper-slide{
+    position: relative; 
+    width: 100%; height: 100%; 
+    background-repeat: no-repeat; background-position: center; background-size: cover;
+}
+#visual .swiper-slide.bg1{background-image: url('../img/bg-1.jpg')}
+#visual .swiper-slide.bg2{background-image: url('../img/bg-2.jpg')}
+#visual .swiper-slide.bg3{background-image: url('../img/bg-3.jpg'); background-position: center -50px;}
+#visual .swiper-slide.bg4{background-image: url('../img/bg-4.jpg'); background-position: center -50px;}
+
+#visual .swiper-slide .msg{
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+    text-align: left; 
+}
+#visual .swiper-slide .msg .txt1{
+    font: bold 72px/1 '맑은 고딕'; color: #fff; text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: translateX(50px); opacity: 0; transition: 1s 0.5s;
+   
+}
+#visual .swiper-slide .msg .txt2{
+    font: 16px '맑은 고딕'; color: #fff;text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: translateX(50px); opacity: 0; transition: 1s 0.8s;
+}
+
+#visual .swiper-slide-active .msg .txt1{transform: translateX(0px); opacity: 1; }
+#visual .swiper-slide-active .msg .txt2{transform: translateX(0px); opacity: 1; }
+
+@media screen and (max-width:1024px){
+    #visual{height: 700px; }
+
+}
+
+@media screen and (max-width:768px){
+    #visual{height: 600px; }
+    #visual .swiper-slide .msg{width: 80%; text-align: center;}
+    #visual .swiper-slide .msg .txt1{margin-bottom: 20px; font: bold 44px/1 '맑은 고딕';}
+    #visual .swiper-slide .msg .txt2{font: 16px '맑은 고딕';}
+}
+
+@media screen and (max-width:640px){
+    
+}
+
+
+
+
+#best_item{width:100%; margin: 0 auto; padding: 100px 0px}
+#best_item .inner{position: relative; width: 1300px; margin: 0 auto; padding-bottom: 40px; }
+
+#best_item .swiper-container{width: 1180px; height: 100%;}
+
+/* 이미지 삽입*/
+#best_item .swiper-slide{width: 100%; height: 100%;}
+
+#best_item .swiper-slide .pic{width: 100%; height: 100%;}
+#best_item .swiper-slide .pic img{width: 100%;}
+
+#best_item .swiper-slide .msg .txt1{font: bold 16px '맑은 고딕';}
+#best_item .swiper-slide .msg .txt2{font: 16px '맑은 고딕';}
+
+#best_item .swiper-button-prev,
+#best_item .swiper-button-next{transform: translateY(-40%);}
+#best_item .swiper-pagination{position: absolute; left: 50%;bottom: 0; transform: translateX(-50%);}
+#best_item .swiper-pagination-bullet{margin: 0 7px;}
+
+@media screen and (max-width:1024px){
+    #best_item .inner{width: 100%; padding: 0 40px;}
+    #best_item .swiper-container{width: 95%;}
+}
+
+
+
+.content .inner > h2{margin-bottom: 40px; text-align: center; font: bold 28px '맑은 고딕'}
+
+#new_item{width:100%; margin: 0 auto; padding: 100px 0px}
+#new_item .inner{position: relative; width: 1300px; margin: 0 auto; padding-bottom: 40px; }
+
+#new_item .swiper-container{width: 1180px; height: 100%;}
+
+#new_item .swiper-slide{
+    position: relative; width: 100%; height:700px; padding: 30px 20px; 
+    border-radius: 10px; text-align: center;
+    transform: scale(0.7); opacity: 0.5;   transition: 0.5s; }
+#new_item .swiper-slide .pic{
+    position: absolute; left: 50%; top: 50%; 
+    transform: translate(-50%, -30%); 
+    width: 450px; height: 450px; 
+    border-radius: 100%; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    overflow: hidden; 
+}
+
+#new_item .swiper-slide .pic img{width: 150%;}
+
+#new_item .swiper-slide .msg .txt1{font: bold 16px '맑은 고딕'; opacity: 0; transition: 0.5s}
+#new_item .swiper-slide .msg .txt2{font: 16px '맑은 고딕'; opacity: 0; transition: 0.5s}
+
+#new_item .swiper-slide-active{z-index: 5;  opacity: 1;  transform: scale(1); background-color: beige;}
+#new_item .swiper-slide-active .msg .txt1{opacity: 1;}
+#new_item .swiper-slide-active .msg .txt2{opacity: 1;}
+
+
+
+#new_item .swiper-button-prev,
+#new_item .swiper-button-next{transform: translateY(-40%);}
+#new_item .swiper-pagination{position: absolute; left: 50%;bottom: 0; transform: translateX(-50%);}
+#new_item .swiper-pagination-bullet{margin: 0 7px;}
+
+
+
+
+
+@media screen and (max-width:1024px){
+    #new_item .inner{width: 100%; padding: 0 40px;}
+    #new_item .swiper-container{width: 95%;}
+}
+
+

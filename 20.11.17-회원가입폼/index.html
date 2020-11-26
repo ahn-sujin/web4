@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"> </head>
+
+<body>
+    <form action="">
+        <table class="signup">
+            <tr>
+                <th>
+                    <label for="name" class="required">이름</label>
+                </th>
+                <td>
+                    <input type="text" id="name"> </td>
+            </tr>
+            
+            <tr>
+                <th>
+                    <label for="user_id" class="required">아이디</label>
+                </th>
+                <td>
+                    <input type="text" id="user_id"> </td>
+            </tr>
+            
+            <tr>
+                <th>
+                    <label for="pw" class="required">비밀번호</label>
+                </th>
+                <td>
+                    <input type="password" id="pw"> </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="pw_2" class="required">비밀번호 확인</label>
+                </th>
+                <td>
+                    <input type="password" id="pw_2"> </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="birth_year" class="required">생년월일</label>
+                </th>
+                <td>
+                    <select name="birth" id="birth_year">
+                        <option value=""></option>
+                    </select>
+                    <label for="birth_year">년</label>
+                    <select name="birth" id="birth_month">
+                        <option value=""></option>
+                    </select>
+                    <label for="birth_month">월</label>
+                    <select name="birth" id="birth_day">
+                        <option value=""></option>
+                    </select>
+                    <label for="birth_day">일</label>
+                </td>
+            </tr>
+            <tr>
+               <th><label for="gender" class="required">성별</label></th>
+                <td>
+                    <ul class="list">
+                        <li>
+                            <input type="radio" name="gender" id="gender_male">
+                            <label for="gender_male">남</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="gender" id="gender_female">
+                            <label for="gender_female">여</label>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="zip_code">우편번호</label>
+                </th>
+                <td>
+                    <input type="text" id="zip_code">
+                    <button>우편번호 검색</button>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="address_1">집주소</label>
+                </th>
+                <td>
+                    <input type="text" id="address_1"> </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="address_2">상세주소</label>
+                </th>
+                <td>
+                    <input type="text" id=address_2 ""> </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="email">이메일</label>
+                </th>
+                <td>
+                    <input type="email" id="email"> </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="phone_1">연락처</label>
+                </th>
+                <td>
+                    <select name="" id="phone_1">
+                        <option value="">010</option>
+                        <option value="">011</option>
+                        <option value="">016</option>
+                        <option value="">017</option>
+                        <option value="">019</option>
+                    </select> <span>-</span>
+                    <input type="text" id="phone_2" class="half"> <span>-</span>
+                    <input type="text" id="phone_3" class="half"> </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="company_1">회사전화</label>
+                </th>
+                <td>
+                    <input type="text" id="company_1" class="half"> <span>-</span>
+                    <input type="text" id="company_2" class="half"> <span>-</span>
+                    <input type="text" id="company_3" class="half"> </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="news">뉴스레터</label>
+                </th>
+                <td>
+                    <ul class="list">
+                        <li>
+                            <input type="radio" name="news" id="news_1">
+                            <label for="news_1">받습니다.</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="news" id="news_2">
+                            <label for="news_2">받지 않습니다.</label>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="sms">SMS안내</label>
+                </th>
+                <td>
+                    <ul class="list">
+                        <li>
+                            <input type="radio" name="sms" id="sms_1">
+                            <label for="sms_1">받습니다.</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="sms" id="sms_2">
+                            <label for="sms_2">받지 않습니다.</label>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

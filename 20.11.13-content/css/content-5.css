@@ -1,0 +1,116 @@
+*{margin: 0; padding: 0; box-sizing: border-box}
+ul, ol, li{list-style: none}
+a{text-decoration: none;}
+
+/*------------ 공통 css ------------*/
+.content{width: 100%; padding: 150px 0px}
+.content .inner{width: 1180px; margin: 0 auto;}
+.content .inner::after{content: ''; clear: both; display: block;}
+
+.content .title{margin-bottom: 20px; font: bold 24px '맑은 고딕'; color: #444; text-align: center; text-transform: uppercase}
+.content .txt{margin-bottom: 40px; font: 14px '맑은 고딕'; color: #777; text-align: center;}
+
+@media screen and (max-width:1200px){
+    .content{padding: 150px 40px}
+    .content .inner{width: 100%; transition: 0.3s}
+}
+@media screen and (max-width:980px){
+    .content{padding: 120px 40px}
+}
+@media screen and (max-width:768px){
+    .content{padding: 80px 20px}
+}
+@media screen and (max-width:640px){
+    .content{padding: 60px 20px}
+}
+@media screen and (max-width:480px){}
+
+/*------------ con6 ------------*/
+
+
+#con6 .box{position: relative; float: left; width: 100%; margin-bottom: 25px; border: 1px solid #ddd}
+
+#con6 .box >div{float: left; width: 50%;}
+#con6 .box .pic{}
+#con6 .box .pic img{display: block; width: 100%;}
+#con6 .box .info{padding: 5% }
+
+#con6 .box .info .sub_title{
+    margin-bottom: 20px; font: bold 24px '맑은 고딕'; color: #444; text-transform: uppercase;}
+#con6 .box .info .score{margin-right: 15px; color: orange}
+#con6 .box .info .review_count{color: #777}
+#con6 .box .info .sub_txt{margin: 20px 0px; color: #777; text-align: justify}
+#con6 .box .info a.view_more{ 
+    display: block; width: 150px; height: 50px; line-height: 50px; 
+    border: 1px solid #444; color: #444; text-align: center;
+}
+
+#con6 .box .price{
+    position: absolute; right: 0; top: 0; z-index: 1; display: inline-block; width: 80px; height: 60px; 
+    font: bold 18px/60px '맑은 고딕'; color: white; text-align: center;
+    overflow: hidden;
+}
+
+#con6 .box .price::before{
+    content: ''; display: block; position: absolute; left: -5px; top: 0; z-index: -1;
+    width: 160%; height: 100%; background: pink; transform: skewX(45deg);
+}
+
+@media screen and (max-width : 1200px){
+    #con6 .box .info{padding: 4% }
+    #con6 .box .info .sub_txt{
+        display: -webkit-box;
+        -webkit-line-clamp: 3; /* 라인수 */
+        -webkit-box-orient: vertical;
+        text-overflow :ellipsis;
+        word-wrap:break-word; overflow: hidden;
+    }  
+}
+@media screen and (max-width : 980px){
+
+    #con6 .box .info .sub_title{margin-bottom: 10px; font-size: 20px;}
+    #con6 .box .info .sub_txt{margin: 10px 0; font-size: 14px;}  
+    #con6 .box .info a.view_more{ transform: scale(0.8); transform-origin: left}
+    #con6 .box .price{transform: scale(0.8); transform-origin: right top; }
+}
+
+@media screen and (max-width : 768px){
+    #con6 .inner{width: 100%}
+    
+    #con6 .box{width: 48.5%; margin-right: 3%;}
+    #con6 .box:last-of-type{margin-right: 0%;}
+    
+    #con6 .box >div{width: 100%;}    
+    
+}
+@media screen and (max-width :640px){
+    #con6 .box .info{padding: 25px;}
+}
+@media screen and (max-width :480px){
+    
+    #con6 .box{width: 100%;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
